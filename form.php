@@ -30,6 +30,7 @@
         <div>
             <label for="sujet" style="display:block;">Sujet :</label>
             <select id="sujet" name="user_subject" style="width:200px; text-align:center;">
+                <option value="">--Choississez votre sujet--</option>
                 <option value="SAV">SAV</option>
                 <option value="Support">Support</option>
                 <option value="Autre">Autre</option>
