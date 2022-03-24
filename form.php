@@ -17,20 +17,20 @@
     <form action="thanks.php" method="post">
         <div>
             <label for="nom" style="display:block;">Nom :</label>
-            <input type="text" id="nom" name="username" style="width:200px;">
+            <input type="text" id="nom" name="username" style="width:200px;" required>
         </div>
         <div>
             <label for="prenom" style="display:block;">Prenom :</label>
-            <input type="text" id="nom" name="firstname" style="width:200px;">
+            <input type="text" id="nom" name="firstname" style="width:200px;" required>
         </div>
         <div>
             <label for="courriel" style="display:block;">Courriel :</label>
-            <input type="email" id="courriel" name="user_email" style="width:200px;">
+            <input type="email" id="courriel" name="user_email" style="width:200px;" required>
         </div>
         <div>
             <label for="sujet" style="display:block;">Sujet :</label>
-            <select id="sujet" name="user_subject" style="width:200px; text-align:center;">
-                <option value="">--Choississez votre sujet--</option>
+            <select id="sujet" name="user_subject" style="width:200px; text-align:center;" required>
+                <option value="" disabled selected>--Choississez votre sujet--</option>
                 <option value="SAV">SAV</option>
                 <option value="Support">Support</option>
                 <option value="Autre">Autre</option>
@@ -42,7 +42,7 @@
         </div>
         <div>
             <label for="message" style="display:block;">Message :</label>
-            <textarea id="message" name="user_message" style="width:200px;"></textarea>
+            <textarea id="message" name="user_message" style="width:200px;" required></textarea>
         </div>
         <div class="button">
             <button type="submit">Envoyer votre message</button>
